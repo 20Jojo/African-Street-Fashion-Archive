@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gallery — African Street Fashion</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<nav>
+  <div class="nav-inner container">
+    <div class="brand">African Street Fashion Archive</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="styles.html">Styles</a></li>
+      <li><a href="designers.html">Designers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section>
+    <h2 class="section-title">Street Fashion Gallery</h2>
+    <div class="gallery">
+      <img src="Afro/pic9.jpg" alt="gallery 1">
+      <img src="Afro/pic11.jpg" alt="gallery 2">
+      <img src="Afro/pic10.jpg" alt="gallery 3">
+      <img src="Afro/pic12.jpg" alt="gallery 4">
+      <img src="Afro/pic13.jpg" alt="gallery 5">
+      <img src="Afro/pic14.jpg" alt="gallery 6">
+      <img src="Afro/pic15.jpg" alt="gallery 7">
+      <img src="Afro/pic16.jpg" alt="gallery 8">
+      <img src="Afro/pic17.jpg" alt="gallery 9">
+      <img src="Afro/pic18.jpg" alt="gallery 10">
+      <img src="Afro/pic19.jpg" alt="gallery 11">
+      <img src="Afro/pic20.jpg" alt="gallery 12">
+      <img src="Afro/pic21.jpg" alt="gallery 13">
+      <img src="Afro/pic22.jpg" alt="gallery 14">
+      <img src="Afro/pic23.jpg" alt="gallery 15">
+      <img src="Afro/pic24.jpg" alt="gallery 16">
+      <img src="Afro/pic25.jpg" alt="gallery 17">
+      <img src="Afro/pic26.jpg" alt="gallery 18">
+      <img src="Afro/pic27.jpg" alt="gallery 19">
+      <img src="Afro/pic28.jpg" alt="gallery 20">
+      <img src="Afro/pic29.jpg" alt="gallery 21">
+      <img src="Afro/pic30.jpg" alt="gallery 22">
+      <img src="Afro/pic31.jpg" alt="gallery 23">
+      <img src="Afro/pic32.jpg" alt="gallery 24">
+      <img src="Afro/pic5.jpg" alt="gallery 25">
+      <img src="Afro/pic8.jpg" alt="gallery 26">
+      <img src="Afro/pic7.jpg" alt="gallery 27">
+      <img src="Afro/pic6.jpg" alt="gallery 28">
+      <img src="Afro/pic33.jpg" alt="gallery 29">
+      <img src="Afro/pic34.jpg" alt="gallery 30">
+      <img src="Afro/pic35.jpg" alt="gallery 31">
+      <img src="Afro/pic36.jpg" alt="gallery 32">
+      <img src="Afro/pic37.jpg" alt="gallery 33">
+      <img src="Afro/pic38.jpg" alt="gallery 34">
+      <img src="Afro/pic39.jpg" alt="gallery 35">
+      <img src="Afro/pic40.jpg" alt="gallery 36">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2025 African Fashion Gallery</footer>
+
+<!-- Lightbox Viewer -->
+<div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded view">
+</div>
+<script>
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('#lightbox .close');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = this.src; // show clicked image
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+    });
+
+    // Close by clicking outside the image
+    lightbox.addEventListener('click', function(e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
